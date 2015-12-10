@@ -5,30 +5,40 @@
 	<title>Prisijungti</title>
 	<link rel="stylesheet"
           href="styles.css">
+	<script type="text/javascript" 
+	        src="main.js"></script>
 </head>
 <body>
 	<div id="header">
 	<img 
-		src="pictures/1.png" 
-		align="left">
-		<h1> Ginklų enciklopedija</h1>
-		<div id="subhead">
-			<a href="Lesson2.html">Grįžti į pagrindinį</a>
+		 src="pictures/1.png" 
+		 align="left">
+<h1> Ginklų enciklopedija</h1>
+    <div id="subhead">
+      <a href="Lesson2.html">Grįžti į pagrindinį</a>
 	</div>
 	</div>
-<div id="form">
-	<h2>Prisijungimas</h2>
+<center>
+    <div id="form">
+<h2>Prisijungimas</h2>
 <form>
-	<br>Prisijungimo vardas:<br>
-	<input type="text"	
-		   name="usn">
-	<br>Slaptažodis:<br>
-	<input type="password" 
-       	   name="psw"><br>
-    <br><input type="submit">&nbsp;&nbspPamiršote slaptažodį?<br>
-	<br><input type="checkbox">&nbsp;&nbsp;Prisiminti jūsų prisijungimo duomenis
+<br>Prisijungimo vardas:<br>
+  <input type="text"
+		 name="user"
+		 placeholder="prisijungimo vardas">
+<br>Slaptažodis:<br>
+   <input type="password" 
+          name="pass"
+		  placeholder="slaptazodis"><br><br>    
+ <button class="button"
+         type="button"
+         onclick="clicked()"
+		 >Prisijungti</button>
+<p><input type="checkbox">&nbsp;&nbsp;Prisiminti jūsų prisijungimo duomenis</p><br>
+<p>Pamiršote slaptažodį?</p>
 </form>
 </div>
+</center>
 </body>
 </html>
 		
