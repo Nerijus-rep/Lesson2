@@ -5,8 +5,6 @@
 	<title>Prisijungti</title>
 	<link rel="stylesheet"
           href="styles.css">
-	<script type="text/javascript" 
-	        src="main.js"></script>
 </head>
 <body>
 	<div id="header">
@@ -25,19 +23,25 @@
 <br>Prisijungimo vardas:<br>
   <input type="text"
 		 name="user"
+		 class="user"
+		 value=""
 		 placeholder="prisijungimo vardas">
 <br>Slaptažodis:<br>
    <input type="password" 
           name="pass"
+		  class="pass"
+		  value=""
 		  placeholder="slaptazodis"><br><br>    
  <button class="button"
          type="button"
+		 value=""
          onclick="clicked()"
 		 >Prisijungti</button>
 <p><input type="checkbox">&nbsp;&nbsp;Prisiminti jūsų prisijungimo duomenis</p><br>
 <p>Pamiršote slaptažodį?</p>
 </form>
 </div>
+<script type="text/javascript" src="main.js"></script>
 </center>
 </body>
 </html>
