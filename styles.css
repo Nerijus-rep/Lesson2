@@ -8,9 +8,9 @@ body{
       width: 1005px;
       }
 #header{
-	background: #BEBB9D;
-	text-align: center;
-	height: 60px;
+	  background: #BEBB9D;
+	  text-align: center;
+	  height: 60px;
       }
 #subhead{
       height: 20px;
@@ -56,7 +56,7 @@ body{
 #content{
       float: left;
       padding: 0 10px;
-	width: 50%;
+	  width: 50%;
       text-indent: 50px;
       }
 #content h2{
@@ -70,10 +70,13 @@ body{
       clear: both;
       background: #BEBB9D;
       text-align: center;
-	padding: 1px;
+	  padding: 1px;
       width: auto;
       font-size: 13px;
       }
+      
+/*registracijos forma*/
+
 #form{
       padding: 0 10px;
       border-width: 1px;
@@ -81,25 +84,69 @@ body{
       border-style: solid;
       }
 .button {
-	display: inline-block;
+	  display: inline-block;
       background-color: chartreuse;
-	outline: none;
-	cursor: pointer;
-	text-align: center;
-	text-decoration: none;
-	font: 14px/100% Arial, Helvetica, sans-serif;
-	padding: .5em 2em .55em;
-	-webkit-border-radius: .5em; 
-	-moz-border-radius: .5em;
-	border-radius: .5em;
-	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
-	-moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
-	box-shadow: 0 1px 2px mediumseagreen (0,0,0,.2);
-}
+	  outline: none;
+	  cursor: pointer;
+	  text-align: center;
+	  text-decoration: none;
+	  font: 14px/100% Arial, Helvetica, sans-serif;
+	  padding: .5em 2em .55em;
+	  -webkit-border-radius: .5em; 
+	  -moz-border-radius: .5em;
+	  border-radius: .5em;
+	  -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	  -moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+	  box-shadow: 0 1px 2px mediumseagreen (0,0,0,.2);
+      }
 .button:hover {
-	text-decoration: none;
-}
+	  text-decoration: none;
+      }
 .button:active {
-	position: relative;
-	top: 1px;
+	  position: relative;
+	  top: 1px;
+      }
+      
+/*prisijungimo forma*/
+
+#register-form {
+    background:#BEBB9D;
+    border-radius: 15px 15px 15px 15px;
+    display: inline-block;
+    margin-bottom: 30px;
+    margin-left: 310px;
+    margin-top: 30px;
+    padding: 25px 50px 10px;
+    width: 350px;
+    text-align: center;
+}
+
+#register-form .fieldgroup {
+    display: inline-block;
+    padding: 8px 10px;
+    width: 340px;
+}
+
+#register-form .fieldgroup label {
+    float: left;
+    padding: 15px 0 0;
+    text-align: left;
+    width: 110px;
+}
+
+#register-form .fieldgroup input, #register-form .fieldgroup textarea, #register-form .fieldgroup select {
+    float: right;
+    margin: 10px 0;
+    height: 25px;
+
+}
+
+#register-form .submit {
+    padding: 10px;
+    width: 340px;
+    height: 40px !important;
+}
+.error{
+    border-width: 3px;
+    border-color: darkred;
 }
