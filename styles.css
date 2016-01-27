@@ -1,34 +1,73 @@
 *{
-      margin: 0; 
-      padding: 0;
+      margin: 0px;
+      padding: 0px;
       }
 body{
       background-color: #F6EBB4;
-      margin: 0 auto;
-      width: 1005px;
-      }
+      }     
 #header{
 	  background: #BEBB9D;
 	  text-align: center;
-	  height: 60px;
-      }
+      padding-top: 1px;
+      padding-bottom: 5px;
+      }  
 #subhead{
-      height: 20px;
-      border-bottom: 1px solid #000;
       text-align: right;
       word-spacing: 15px;
       font-family: Courier New, Courier, monospace;
-      padding-right: 20px;
+      font-size: 17px;
+      }
+@media all and (max-width: 992px){
+#subhead{
+      text-align: center;
+      word-spacing: 15px;
+      font-family: Courier New, Courier, monospace;
+      font-size: 17px;
+      }
       }
 #header img{
-      width: 65px;
+      width: 99px;
       height: auto;
-      }
-#menu{
-      background: #E0D9C0;
       float: left;
+      }
+@media all and (max-width: 992px){
+#header img{
+      width: 80px;
+      height: auto;
+      float: left;
+      padding-bottom: 15px;
+      }
+      }
+@media all and (max-width: 768px){
+#header img{
+      width: 55px;
+      height: auto;
+      float: left;
+      padding-bottom: 15px;
+      }
+      }
+@media all and (max-width: 544px){
+#header img{
+      width: 15px;
+      height: auto;
+      float: left;
+      padding-bottom: 15px;
+      }
+      }    
+#menu{  
+      background: #E0D9C0;
+      padding: 0 10px;
+      }
+.col-sm-4{
+    background: #E0D9C0;
+    padding: 0 10px;
+}
+@media all and (max-width: 992px){
+#menu{
+      float: none;
       padding: 0 10px;
       height: 567px;
+      }
       }
 #menu li a{
       border-width: 3px;
@@ -45,106 +84,77 @@ body{
       background: #f0e7d7;
       border-color: #aaab9c #fff #fff #ccc;
       color: #655643;
-}
+      }
 #menu h2{
       margin: 10px;
       text-decoration: underline;
       }
+@media all and (max-width: 600px){
+#menu h2{
+      margin: 10px;
+      text-decoration: underline;
+      text-align: center;
+      }
+      }      
 #menu ul{
       list-style: none;
       }
+@media all and (max-width: 992px){
 #content{
-      float: left;
+      width: 94%;
+      text-align: left;
       padding: 0 10px;
-	  width: 50%;
-      text-indent: 50px;
       }
+      }    
 #content h2{
       margin: 10px;
       }
 #content img{
       width: 300px;
-      padding-left: 390px;
+      float: right;
+      }
+@media all and (max-width: 1005px){
+#content img{
+      display: none; 
+      }
       }
 #footer{
       clear: both;
       background: #BEBB9D;
       text-align: center;
-	  padding: 1px;
+      padding: 1px;
       width: auto;
       font-size: 13px;
       }
       
-/*registracijos forma*/
-
-#form{
-      padding: 0 10px;
-      border-width: 1px;
-      border-color: #000;
-      border-style: solid;
-      }
-.button {
-	  display: inline-block;
-      background-color: #E0CD82;
-	  outline: none;
-	  cursor: pointer;
-	  text-align: center;
-	  text-decoration: none;
-	  font: 14px/100% Arial, Helvetica, sans-serif;
-	  padding: .5em 2em .55em;
-	  -webkit-border-radius: .5em; 
-	  -moz-border-radius: .5em;
-	  border-radius: .5em;
-	  -webkit-box-shadow: 0 1px 2px #000(0,0,0,.2);
-	  -moz-box-shadow: 0 1px 2px #000(0,0,0,.2);
-	  box-shadow: 0 1px 2px #E5BB60 (0,0,0,.2);
-      }
-.button:hover {
-	  text-decoration: none;
-      }
-.button:active {
-	  position: relative;
-	  top: 1px;
-      }
-      
 /*prisijungimo forma*/
 
-#register-form {
-    background:#BEBB9D;
-    border-radius: 15px 15px 15px 15px;
-    display: inline-block;
+.col-md-4{
+      background:#BEBB9D;
+      border-radius: 15px 15px 15px 15px;
+      margin-top: 30px;    
+      text-align: center;
+      }
+fieldset{
+    margin: 20px;
+    padding: 0 10px;
+}
+button{
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+input[type="checkbox"]{
     margin-bottom: 30px;
-    margin-left: 310px;
-    margin-top: 30px;
-    padding: 25px 50px 10px;
-    width: 350px;
-    text-align: center;
+}      
+                  
+/*registracijos forma*/
+
+.col-md-4 .fieldgroup label{
+    float: left;   
 }
-
-#register-form .fieldgroup {
-    display: inline-block;
-    padding: 8px 10px;
-    width: 340px;
-}
-
-#register-form .fieldgroup label {
-    float: left;
-    padding: 15px 0 0;
-    text-align: left;
-    width: 110px;
-}
-
-#register-form .fieldgroup input, #register-form .fieldgroup textarea, #register-form .fieldgroup select {
-    float: right;
-    margin: 10px 0;
-    height: 25px;
-
-}
-
-#register-form .submit {
-    padding: 10px;
-    width: 340px;
-    height: 40px;
+.col-md-4 .fieldgroup input{
+    padding: 5px;
+    width: 100%;
 }
 .error{
     border-width: 3px;

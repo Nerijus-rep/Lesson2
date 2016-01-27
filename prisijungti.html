@@ -1,50 +1,106 @@
 <!--DOCTYPE html-->
 <html>
 <head>
-   <meta charset="utf-8">
-<title>Prisijungti</title>
-   <link rel="stylesheet"
-         href="styles.css">
- <script type="text/javascript" 
-         src="main.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" 
+          content="width=device-width, initial-scale=1">
+
+     <!--Bootstrap Grid-->     
+    <link rel="stylesheet" 
+          href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script> 
+    
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" 
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" 
+          integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" 
+          rossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" 
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" 
+          integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" 
+          crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" 
+            integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" 
+            crossorigin="anonymous"></script>
+    
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    
+    
+    
+    <title>Prisijungti</title>
+    
+    <link rel="stylesheet"
+          href="styles.css">
+          
+    <script type="text/javascript" 
+            src="main.js"></script>
+            
 </head>
 <body>
+    
 	<div id="header">
-	<img 
-		 src="pictures/1.png" 
-		 align="left">
-<h1> Ginklų enciklopedija</h1>
-    <div id="subhead">
-      <a href="Lesson2.html">Grįžti į pagrindinį</a>
+    <div class="container">
+    <div class="row">
+    <div class="col-lg-12">
+	<img src="pictures/1.png" >
+	<h1> Ginklų enciklopedija</h1>
+    </div>
+	<div id="subhead">
+    <a href="titulinis.html">Grįžti į pagrindinį</a>
 	</div>
-	</div>
-<center>
-    <div id="form">
-<h2>Prisijungimas</h2>
-<form>
-<br>Prisijungimo vardas:<br>
-  <input type="text"
-		 name="user"
-		 class="user"
-		 value=""
-		 placeholder="prisijungimo vardas">
-<br>Slaptažodis:<br>
-  <input type="password" 
-         name="pass"
-		 class="pass"
-		 value=""
-		 placeholder="slaptazodis"><br><br>    
- <button class="button"
-         type="button"
-		 value=""
-         onclick="clicked()"
-		 >Prisijungti</button>
-<p><input type="checkbox">&nbsp;&nbsp;Prisiminti jūsų prisijungimo duomenis</p><br>
-<p>Pamiršote slaptažodį?</p>
+    </div>
+    </div>
+    </div>
+	
+     
+    <div class="container">     
+    <div class="row">   
+    <div class="col-md-4 col-md-offset-4">
+          
+<fieldset>
+<form class="form-signin">
+        
+    <h2 class="form-signin-heading">Prisijungimas</h2>
+    
+    <div class="fieldgroup">
+    <p>Prisijungimo vardas</p>
+    <input id="inputusername" 
+           class="form-control"
+           placeholder="Prisijungimo vardas"
+           required=""
+           autofocus=""
+           type="username">
+    </div>
+    
+    <div class="fieldgroup">
+    <p>Slaptažodis</p>
+    <input id="inputPassword"
+           class="form-control"
+           placeholder="Slaptažodis"
+           required=""
+           type="password">
+    </div>
+    
+    <button class="btn btn-lg btn-primary btn-block"
+            type="submit">Prisijungti
+    </button>
+            
 </form>
-</div>
+</fieldset>
 
-</center>
+    <input type="checkbox"
+           value="remember-me">&nbsp Prisiminti jūsų prisijungimo duomenis
+    </div>
+    </div>
+    </div>
+
 </body>
 </html>
 		
